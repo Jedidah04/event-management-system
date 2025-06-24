@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Role</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      font-size: 18px;
+      padding: 15px 30px;
+      margin: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the Event Management System</h1>
+  <p>Are you logging in as an:</p>
+
+  <button onclick="goToOrganizer()">Organizer</button>
+  <button onclick="goToUser()">User</button>
+
+  <script>
+    function goToOrganizer() {
+      window.location.href = "login.html"; // Organizer login
+    }
+
+    function goToUser() {
+      window.location.href = "user-login.html"; // You can create this next
+    }
+  </script>
+
+</body>
+</html>
